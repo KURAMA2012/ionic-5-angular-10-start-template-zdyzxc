@@ -21,6 +21,13 @@
 
   --ion-text-color: white;
   --ion-text-color-rgb: 255, 255, 255;
+
+  --ion-card-background: linear-gradient(
+    139deg,
+    #831affab 0%,
+    transparent 100%
+  );
+  --ion-item-background: transparent;
 }
 
 .conteudo {
@@ -34,4 +41,28 @@
   padding-bottom: 0px;
   width: 100%;
   max-width: 400px;
+
+  animation: animacao-img-item 4s infinite alternate;
+}
+
+@keyframes animacao-img-item {
+  0% {
+    transform: translate(0px, 7px);
+  }
+  100% {
+    transform: translate(0px, -7px);
+  }
+}
+
+ion-thumbnail {
+  animation: animacao 4s infinite alternate;
+}
+
+@keyframes animacao {
+  0% {
+    transform: translate(0px, 7px) scale(0.8);
+  }
+  100% {
+    transform: translate(0px, -7px) scale(0.5);
+  }
 }
