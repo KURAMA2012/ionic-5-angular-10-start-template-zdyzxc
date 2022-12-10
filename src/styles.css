@@ -39,6 +39,12 @@
 ion-card {
   border-radius: 15px;
   margin-bottom: 5px;
+  cursor: pointer;
+  transition-duration: 500ms;
+}
+
+ion-card:hover {
+  transform: scale(1.03);
 }
 
 .img-item {

@@ -5,14 +5,14 @@
 </ion-header>
 
 <ion-content>
-  <div class="conteudo">
+  <div class="conteudo animate__animated animate__fadeInLeft">
     <img
       class="img-item"
       src="https://drive.google.com/uc?id=16sL85fCiC5QVJsjgMPoWUTy374Wmlsny"
       alt="Imagem de Solidariedade"
     />
     <p>A solidariedade é capaz de transformar a nossa sociedade.</p>
-    <ion-card>
+    <ion-card [routerLink]="['/tabs/tab2']">
       <ion-item>
         <ion-thumbnail slot="start">
           <img
@@ -23,7 +23,7 @@
         <ion-label>Quero Doar</ion-label>
       </ion-item>
     </ion-card>
-    <ion-card>
+    <ion-card [routerLink]="['/tabs/tab3']">
       <ion-item>
         <ion-thumbnail slot="start">
           <img
