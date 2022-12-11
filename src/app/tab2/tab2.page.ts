@@ -9,23 +9,24 @@ export class Tab2Page {
   constructor() {}
 
   doarAlimentos() {
-    window.open(
-      'https://www.google.com/maps/search/?api=1&query=Ponto+Doacao+Alimento',
-      '_blank'
-    ).focus;
+    this.abrirURL(
+      'https://www.google.com/maps/search/?api=1&query=Ponto+Doacao+Alimento'
+    );
   }
 
   doarRoupas() {
-    window.open(
-      'https://www.google.com/maps/search/?api=1&query=Ponto+Doacao+Roupas',
-      '_blank'
-    ).focus;
+    this.abrirURL(
+      'https://www.google.com/maps/search/?api=1&query=Ponto+Doacao+Roupas'
+    );
   }
 
   doarSangue() {
-    window.open(
-      'https://www.google.com/maps/search/?api=1&query=Ponto+Doacao+Sangue',
-      '_blank'
-    ).focus;
+    this.abrirURL(
+      'https://www.google.com/maps/search/?api=1&query=Ponto+Doacao+Sangue'
+    );
+  }
+
+  abrirURL(url: string) {
+    window.open(url, '_blank').focus();
   }
 }
